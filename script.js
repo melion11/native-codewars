@@ -71,3 +71,42 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 
 // let result = sumTwoSmallestNumbers([5, 8, 12, 19, 22]);
 // console.log(result);
+
+/** Your task is to write a function which returns the time since midnight in milliseconds.
+
+Example:
+h = 0
+m = 1
+s = 1
+
+result = 61000 */
+
+
+// function past(h, m, s) {
+
+// 	h = h * 3600000;
+// 	m = m * 60000;
+// 	s = s * 1000;
+
+// 	let result = h + m + s;
+
+// 	return result;
+// }
+
+// console.log(past(0, 1, 1))
+
+
+
+
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// Return your answer as a number.
+
+function sumMix(x) {
+	let sum = 0;
+	for (let i = 0; i < x.length; i++) {
+		sum += Number(x[i]);
+	}
+	return sum;
+}
+
+console.log(sumMix([9, 3, '7', '3']))
