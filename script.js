@@ -154,17 +154,27 @@ result = 61000 */
 
 // Let's play! You have to return which player won! In case of a draw return Draw!.
 
-const rps = (p1, p2) => {
-	const rockPaperScissors = ['rock', 'paper', 'scissors'];
-	const player1 = rockPaperScissors.indexOf(p1);
-	const player2 = rockPaperScissors.indexOf(p2);
-	if (player1 == 2 && player2 == 1 ||
-		player1 == 0 && player2 == 2 ||
-		player1 == 1 && player2 == 0) {
-		return 'Player 1 won!'
-	} else if (player1 == player2) {
-		return "Draw!"
-	} else {
-		return 'Player 2 won!'
-	}
-};
+// const rps = (p1, p2) => {
+// 	const rockPaperScissors = ['rock', 'paper', 'scissors'];
+// 	const player1 = rockPaperScissors.indexOf(p1);
+// 	const player2 = rockPaperScissors.indexOf(p2);
+// 	if (player1 == 2 && player2 == 1 ||
+// 		player1 == 0 && player2 == 2 ||
+// 		player1 == 1 && player2 == 0) {
+// 		return 'Player 1 won!'
+// 	} else if (player1 == player2) {
+// 		return "Draw!"
+// 	} else {
+// 		return 'Player 2 won!'
+// 	}
+// };
+
+
+// Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+// Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+// const binaryArrayToNumber = arr => {
+// 	const arrJoin = arr.join('');
+// 	const binaryValue = parseInt(arrJoin, 2);
+// 	return binaryValue;
+//  };
