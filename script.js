@@ -129,25 +129,42 @@ result = 61000 */
 // Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
 // Note: a and b are not ordered!
 
-function getSum(a, b) {
-	let sum = 0;
-	if (a === b) {
-		return a || b;
+// function getSum(a, b) {
+// 	let sum = 0;
+// 	if (a === b) {
+// 		return a || b;
+// 	}
+
+// 	if (a > b) {
+// 		for (let i = b; i <= a; i++) {
+// 			sum += i;
+// 		}
+// 		return sum;
+// 	} else if (b > a) {
+// 		for (let i = a; i <= b; i++) {
+// 			sum += i;
+// 		}
+// 		return sum;
+// 	}
+// }
+
+// let result = getSum(1, 4);
+
+// console.log(result);
+
+// Let's play! You have to return which player won! In case of a draw return Draw!.
+
+const rps = (p1, p2) => {
+	const rockPaperScissors = ['rock', 'paper', 'scissors'];
+	const player1 = rockPaperScissors.indexOf(p1);
+	const player2 = rockPaperScissors.indexOf(p2);
+	if (player1 == 2 && player2 == 1 ||
+		player1 == 0 && player2 == 2 ||
+		player1 == 1 && player2 == 0) {
+		return 'Player 1 won!'
+	} else if (player1 == player2) {
+		return "Draw!"
+	} else {
+		return 'Player 2 won!'
 	}
-
-	if (a > b) {
-		for (let i = b; i <= a; i++) {
-			sum += i;
-		}
-		return sum;
-	} else if (b > a) {
-		for (let i = a; i <= b; i++) {
-			sum += i;
-		}
-		return sum;
-	}
-}
-
-let result = getSum(1, 4);
-
-console.log(result);
+};
