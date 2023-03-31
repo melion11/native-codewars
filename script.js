@@ -214,3 +214,10 @@ result = 61000 */
 // 	}
 // 	return sum - min - max;
 // }
+
+// ___________________________________#3
+// Make a simple function called greet that returns the most-famous "hello world!".
+
+// const greet = () => {
+// 	return 'hello world!';
+// }
