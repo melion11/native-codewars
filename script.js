@@ -221,3 +221,16 @@ result = 61000 */
 // const greet = () => {
 // 	return 'hello world!';
 // }
+
+
+// Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+// [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+// function grow(x){
+// 	let sum = 1;
+// 	let sortArr = x.sort((a,b) => a-b);
+// 	for (let elem of x) {
+// 	  sum *= elem;
+// 	}
+// 	return sum;
+//  }
