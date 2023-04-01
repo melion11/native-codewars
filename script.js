@@ -219,6 +219,26 @@ result = 61000 */
 // Array can contain numbers or strings. X can be either.
 // Return true if the array contains the value, false if not.
 
-function check(a, x) {
-	return a.includes(x);
+// function check(a, x) {
+// 	return a.includes(x);
+// }
+
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+	let strSplit = str.split('')
+	let arr = [];
+
+	for (let i = 0; i < strSplit.length; i++) {
+		if (strSplit[i] === 'a' || strSplit[i] === 'e' || strSplit[i] === 'i' || strSplit[i] === 'o' || strSplit[i] === 'u') {
+			arr.push(strSplit[i]);
+		}
+	}
+	return arr.length;
 }
+
+let result = getCount('abracadabra');
+
+console.log(result);
