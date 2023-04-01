@@ -179,68 +179,12 @@ result = 61000 */
 // 	return binaryValue;
 //  };
 
-// ___________________________________#1
-// Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 
-// class Kata {
-// 	static getVolumeOfCuboid(length, width, height) {
-// 		return length * width * height;
+// function greet (name, owner) {
+// 	if (name === owner) {
+// 	  return 'Hello boss';
+// 	} else if (name !== owner) {
+// 	  return 'Hello guest';
 // 	}
-// }
-
-
-// ___________________________________#2
-// Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
-// The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
-// Mind the input validation.
-
-// function sumArray(array) {
-// 	if (!Array.isArray(array) || array.length <= 1) {
-// 		return 0;
-// 	}
-
-// 	let sum = 0;
-// 	let min = array[0];
-// 	let max = array[0];
-
-// 	for (let i = 0; i < array.length; i++) {
-// 		if (array[i] < min) {
-// 			min = array[i];
-// 		}
-// 		if (array[i] > max) {
-// 			max = array[i];
-// 		}
-// 		sum += array[i];
-// 	}
-// 	return sum - min - max;
-// }
-
-// ___________________________________#3
-// Make a simple function called greet that returns the most-famous "hello world!".
-
-// const greet = () => {
-// 	return 'hello world!';
-// }
-
-
-// Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
-// [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
-
-// function grow(x){
-// 	let sum = 1;
-// 	let sortArr = x.sort((a,b) => a-b);
-// 	for (let elem of x) {
-// 	  sum *= elem;
-// 	}
-// 	return sum;
 //  }
-
-
-// function areYouPlayingBanjo(name) {
-// 	if (name[0] === 'R' || name[0] === 'r') {
-// 		return name + " plays banjo";
-// 	} else {
-// 		return name + " does not play banjo"
-// 	}
-// }
-
