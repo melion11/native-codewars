@@ -227,18 +227,28 @@ result = 61000 */
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
 // The input string will only consist of lower case letters and/or spaces.
 
-function getCount(str) {
-	let strSplit = str.split('')
-	let arr = [];
+// function getCount(str) {
+// 	let strSplit = str.split('')
+// 	let arr = [];
 
-	for (let i = 0; i < strSplit.length; i++) {
-		if (strSplit[i] === 'a' || strSplit[i] === 'e' || strSplit[i] === 'i' || strSplit[i] === 'o' || strSplit[i] === 'u') {
-			arr.push(strSplit[i]);
-		}
-	}
-	return arr.length;
+// 	for (let i = 0; i < strSplit.length; i++) {
+// 		if (strSplit[i] === 'a' || strSplit[i] === 'e' || strSplit[i] === 'i' || strSplit[i] === 'o' || strSplit[i] === 'u') {
+// 			arr.push(strSplit[i]);
+// 		}
+// 	}
+// 	return arr.length;
+// }
+
+// let result = getCount('abracadabra');
+
+// console.log(result);
+
+// Now you have to write a function that takes an argument and returns the square of it.
+
+// const square = (n) => n**2
+
+// Given an array of integers, return a new array with each value doubled.
+
+function maps(x) {
+	return x.map(elem => elem * 2)
 }
-
-let result = getCount('abracadabra');
-
-console.log(result);
