@@ -227,18 +227,71 @@ result = 61000 */
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
 // The input string will only consist of lower case letters and/or spaces.
 
-function getCount(str) {
-	let strSplit = str.split('')
-	let arr = [];
+// function getCount(str) {
+// 	let strSplit = str.split('')
+// 	let arr = [];
 
-	for (let i = 0; i < strSplit.length; i++) {
-		if (strSplit[i] === 'a' || strSplit[i] === 'e' || strSplit[i] === 'i' || strSplit[i] === 'o' || strSplit[i] === 'u') {
-			arr.push(strSplit[i]);
-		}
-	}
-	return arr.length;
-}
+// 	for (let i = 0; i < strSplit.length; i++) {
+// 		if (strSplit[i] === 'a' || strSplit[i] === 'e' || strSplit[i] === 'i' || strSplit[i] === 'o' || strSplit[i] === 'u') {
+// 			arr.push(strSplit[i]);
+// 		}
+// 	}
+// 	return arr.length;
+// }
 
-let result = getCount('abracadabra');
+// let result = getCount('abracadabra');
 
-console.log(result);
+// console.log(result);
+
+// Now you have to write a function that takes an argument and returns the square of it.
+
+// const square = (n) => n**2
+
+// Given an array of integers, return a new array with each value doubled.
+
+// function maps(x) {
+// 	return x.map(elem => elem * 2)
+// }
+
+//
+// func1(2,3,5, 6,2)
+//
+// function func5 (result) {
+//     console.log(result)
+// }
+//
+// function func4 (newArray) {
+//
+//     let result = 0;
+//     for (let i = 0; i < newArray.length; i++) {
+//         result += newArray[i]
+//     }
+//     return func5(result);
+// }
+//
+// function func3 (newArr) {
+//     let newArray = newArr.map(el => el ** 2);
+//     return func4(newArray);
+// }
+//
+// function func2 (arr) {
+//     let newArr = arr.filter(el=> el % 2 === 0);
+//     return func3(newArr);
+// }
+//
+// function func1 (...num) {
+//
+//     return func2(...num)
+// }
+//
+// Very simple, given an integer or a floating-point number, find its opposite.
+//
+//     function opposite(number) {
+//     return number * -1
+// }
+
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+//
+//     function removeExclamationMarks(s) {
+//     return s.split('!').join('');
+// }
