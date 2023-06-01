@@ -1,13 +1,13 @@
 /** In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
-Examples
-highAndLow("1 2 3 4 5");  // return "5 1"
-highAndLow("1 2 -3 4 5"); // return "5 -3"
-highAndLow("1 9 3 4 -5"); // return "9 -5"
-Notes
-All numbers are valid Int32, no need to validate them.
-There will always be at least one number in the input string.
-Output string must be two numbers separated by a single space, and highest number is first. **/
+ Examples
+ highAndLow("1 2 3 4 5");  // return "5 1"
+ highAndLow("1 2 -3 4 5"); // return "5 -3"
+ highAndLow("1 9 3 4 -5"); // return "9 -5"
+ Notes
+ All numbers are valid Int32, no need to validate them.
+ There will always be at least one number in the input string.
+ Output string must be two numbers separated by a single space, and highest number is first. **/
 
 // function highAndLow(numbers) {
 
@@ -28,18 +28,16 @@ Output string must be two numbers separated by a single space, and highest numbe
 // console.log(highAndLow(numbers));
 
 
-
-
 /** In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 
-Examples
-makeNegative(1);    // return -1
-makeNegative(-5);   // return -5
-makeNegative(0);    // return 0
-makeNegative(0.12); // return -0.12
-Notes
-The number can be negative already, in which case no change is required.
-Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.**/
+ Examples
+ makeNegative(1);    // return -1
+ makeNegative(-5);   // return -5
+ makeNegative(0);    // return 0
+ makeNegative(0.12); // return -0.12
+ Notes
+ The number can be negative already, in which case no change is required.
+ Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.**/
 
 // function makeNegative(num) {
 // 	if (num > 0) {
@@ -52,12 +50,11 @@ Zero (0) is not checked for any specific sign. Negative zeros make no mathematic
 // }
 
 
-
 /** Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
 
-For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+ For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
 
-[10, 343445353, 3453445, 3453545353453] should return 3453455. */
+ [10, 343445353, 3453445, 3453545353453] should return 3453455. */
 
 
 // function sumTwoSmallestNumbers(numbers) {
@@ -74,12 +71,12 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 
 /** Your task is to write a function which returns the time since midnight in milliseconds.
 
-Example:
-h = 0
-m = 1
-s = 1
+ Example:
+ h = 0
+ m = 1
+ s = 1
 
-result = 61000 */
+ result = 61000 */
 
 
 // function past(h, m, s) {
@@ -94,8 +91,6 @@ result = 61000 */
 // }
 
 // console.log(past(0, 1, 1))
-
-
 
 
 // Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
@@ -294,4 +289,45 @@ result = 61000 */
 //
 //     function removeExclamationMarks(s) {
 //     return s.split('!').join('');
+// }
+//
+// Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+//
+//     Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
+
+// function lovefunc(flower1, flower2){
+//     return (flower1 % 2 === 0 && flower2  % 2 !== 0) || (flower2 % 2 === 0 && flower1 % 2 !== 0) ? true : false
+//
+// }
+
+// When provided with a number between 0-9, return it in words.
+// Input :: 1
+// Output :: "One".
+// If your language supports it, try using a switch statement.
+
+// function switchItUp(number){
+//     switch (number) {
+//         case 0:
+//             return 'Zero';
+//         case 1:
+//             return 'One';
+//         case 2:
+//             return 'Two';
+//         case 3:
+//             return 'Three';
+//         case 4:
+//             return 'Four';
+//         case 5:
+//             return 'Five';
+//         case 6:
+//             return 'Six';
+//         case 7:
+//             return 'Seven';
+//         case 8:
+//             return 'Eight';
+//         case 9:
+//             return 'Nine';
+//
+//     }
 // }
