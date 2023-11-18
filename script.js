@@ -331,3 +331,89 @@
 //
 //     }
 // }
+
+// const numbers = [1, 45, 66, 2, 4, 6, -2, -10, -100, 100]
+//
+// const findMaxNum = (array) => {
+//     let maxNum = array[0]
+//     for (let i = 1; i < array.length; i++) {
+//         if (maxNum < array[i]) {
+//             maxNum = array[i]
+//         }
+//     }
+//     return maxNum
+// }
+
+// console.log(findMaxNum(numbers))
+
+// const factorialFoo = (n) => {
+//     let sum = 1
+//     for (let i = n; i >= 1; i--) {
+//         sum *= i
+//     }
+//     return sum
+// }
+
+// const factorialFoo = (n) => {
+//     return n ? n * factorialFoo(n - 1) : 1
+// }
+//
+// console.log(factorialFoo(5))
+// console.log(factorialFoo(4))
+
+// function foo(sec) {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res(1)
+//         }, sec * 1000)
+//     })
+// }
+//
+// foo(2).then(el => console.log(el))
+
+
+// const factorial = (n) => {
+//     if (n === 1) return 1
+//     return n * factorial(n - 1)
+// }
+//
+// // 5 * factorial(4)
+// // 5 * 4 * factorial(3)
+// // 5 * 4 * 3 * factorial(2)
+// // 5 * 4 * 3 * 2 * 1
+//
+// console.log(factorial(5))
+
+// const  fib = (n) => {
+//     if (n <= 1) return n
+//     return fib(n - 1) + fib(n - 2)
+// }
+//
+// // fib(7) = fib(6) + fib(5) // 13
+// // fib(6) = fib(5) + fib(4) // 8
+// // fib(5) = fib(4) + fib(3) // 5
+// // fib(4) = fib(3) + fib(2) // 3
+// // fib(3) = fib(2) + fib(1) // 2
+// // fib(2) = fib(1) + fib(0) // 1
+// // fib(1) = 1
+// // fib(0) = 0
+//
+// console.log(fib(7))
+// console.log(fib(5))
+
+// const sum = (n) => {
+//     if (n === 1) return 1
+//     return n + sum(n - 1)
+// }
+//
+// // sum(3)
+// // 3 + 2 + 1
+//
+// console.log(sum(3))
+
+function pow(x, y) {
+    if (y === 1) return x
+    return x * pow(x, y - 1)
+}
+
+console.log(pow(4, 2))
