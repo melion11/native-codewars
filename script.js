@@ -417,3 +417,25 @@ function pow(x, y) {
 }
 
 console.log(pow(4, 2))
+
+function noOdds( values ){
+    return values.filter(el => el % 2 === 0)
+}
+
+const isAnagram = function(test, original) {
+    return test.toLowerCase().split('').sort().join('') ===  original.toLowerCase().split('').sort().join('')
+};
+
+function nearestSq(n){
+    return Math.round(Math.sqrt(n)) ** 2
+}
+
+function sortArray(array) {
+    const oddArr = array.filter(el => el % 2 !== 0).sort((a,b) => a - b)
+    return array.map(num => {
+        if (num % 2 !== 0) {
+            return oddArr.shift();
+        }
+        return num;
+    });
+}
